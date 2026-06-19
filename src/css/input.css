@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Image fallback placeholder */
+img {
+  background-color: #e7efdb;
+  min-height: 40px;
+}
+
+img::before {
+  content: '';
+  display: block;
+  background: linear-gradient(135deg, #e7efdb 0%, #f3f7ed 100%);
+}

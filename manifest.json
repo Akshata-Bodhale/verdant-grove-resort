@@ -1,0 +1,16 @@
+{
+  "name": "Verdant Grove Resort",
+  "short_name": "Verdant Grove",
+  "description": "Eco Forest Resort - Reconnect with Nature, Reimagined",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F1E8",
+  "theme_color": "#4A7C2A",
+  "icons": [
+    {
+      "src": "/public/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verdant Grove Resort | Eco Forest Retreat</title>
+  <meta name="description" content="Escape to Verdant Grove Resort - a sustainable forest retreat offering treehouse cabanas, organic dining, nature trails and wellness experiences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#4A7C2A">
+
+
+  <!-- Open Graph / Social Share -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourusername.github.io/verdant-grove-resort/">
+<meta property="og:title" content="Verdant Grove Resort | Eco Forest Retreat">
+<meta property="og:description" content="Escape to Verdant Grove — where treehouse cabanas, organic cuisine, and the calm of the forest await.">
+<meta property="og:image" content="https://yourusername.github.io/verdant-grove-resort/assets/images/hero/forest-canopy.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Verdant Grove Resort | Eco Forest Retreat">
+<meta name="twitter:description" content="Reconnect with Nature, Reimagined.">
+</head>
+<body class="font-body bg-cream text-forest-900 dark:bg-forest-900 dark:text-cream transition-colors duration-300">
+ <!-- PRELOADER -->
+<div id="preloader" class="fixed inset-0 z-[200] bg-cream dark:bg-forest-900 flex items-center justify-center">
+  <div class="text-center">
+    <div class="text-6xl animate-bounce mb-4">🌿</div>
+    <p class="font-heading text-forest-700 dark:text-cream text-xl font-semibold tracking-widest">Verdant Grove</p>
+    <div class="mt-4 w-48 h-1 bg-forest-100 rounded-full mx-auto overflow-hidden">
+      <div id="preloader-bar" class="h-full bg-forest-500 rounded-full w-0 transition-all duration-1000"></div>
+    </div>
+  </div>
+</div>
+  
+</div>
+
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50" style="background: rgba(245, 241, 232, 0.97); box-shadow: 0 1px 8px rgba(0,0,0,0.08);">
+  <nav class="flex items-center justify-between px-6 md:px-12 py-4">
+    <a href="index.html" class="font-heading text-2xl font-bold text-forest-700 dark:text-cream">
+      Verdant Grove
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center gap-8 font-medium">
+      <li><a href="index.html" class="hover:text-forest-500 transition">Home</a></li>
+      <li><a href="about.html" class="hover:text-forest-500 transition">About</a></li>
+      <li><a href="rooms.html" class="hover:text-forest-500 transition">Rooms</a></li>
+      <li><a href="gallery.html" class="hover:text-forest-500 transition">Gallery</a></li>
+      <li><a href="services.html" class="hover:text-forest-500 transition">Services</a></li>
+      <li><a href="contact.html" class="hover:text-forest-500 transition">Contact</a></li>
+    </ul>
+
+    <div class="hidden md:flex items-center gap-4">
+      <button id="theme-toggle" aria-label="Toggle dark mode" class="p-2 rounded-full hover:bg-forest-100 dark:hover:bg-forest-700 transition">
+        <svg id="theme-icon-light" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <svg id="theme-icon-dark" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+      </button>
+      <a href="booking.html" class="bg-forest-500 hover:bg-forest-700 text-white px-5 py-2 rounded-full font-semibold transition">Book Now</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden p-2" aria-label="Open menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-6 flex flex-col gap-4 font-medium" style="background: rgba(245, 241, 232, 0.97);">
+    <a href="index.html" class="hover:text-forest-500">Home</a>
+    <a href="about.html" class="hover:text-forest-500">About</a>
+    <a href="rooms.html" class="hover:text-forest-500">Rooms</a>
+    <a href="gallery.html" class="hover:text-forest-500">Gallery</a>
+    <a href="services.html" class="hover:text-forest-500">Services</a>
+    <a href="contact.html" class="hover:text-forest-500">Contact</a>
+    <a href="booking.html" class="bg-forest-500 text-white px-5 py-2 rounded-full text-center font-semibold">Book Now</a>
+    <button id="theme-toggle-mobile" class="text-left hover:text-forest-500">Toggle Dark Mode</button>
+  </div>
+</header>
+
+  <!-- HERO SECTION -->
+  <section class="relative h-screen flex items-center justify-center text-center overflow-hidden" style="background-image: url('/assets/images/hero/forest-canopy.jpg'); background-size: cover; background-position: center;">
+    
+    <img src="/assets/images/gallery/forest-hero1.jpg" class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 px-6 text-white" data-aos="fade-up">
+      <h1 class="font-heading text-4xl md:text-6xl font-bold mb-4">Reconnect with Nature, Reimagined</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Escape to Verdant Grove — where treehouse cabanas, organic cuisine, and the calm of the forest await.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="booking.html" class="bg-forest-500 hover:bg-forest-700 text-white px-8 py-3 rounded-full font-semibold transition">Book Your Stay</a>
+        <a href="rooms.html" class="bg-white/20 hover:bg-white/30 backdrop-blur border border-white text-white px-8 py-3 rounded-full font-semibold transition">Explore Rooms</a>
+      </div>
+    </div>
+    <a href="#highlights" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </a>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights" class="py-20 px-6 md:px-12 bg-cream dark:bg-forest-900">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center" data-aos="fade-up">
+      <div class="p-8 rounded-2xl bg-forest-50 dark:bg-forest-700/30 hover:shadow-xl transition">
+        <div class="text-4xl mb-4">🌿</div>
+        <h3 class="font-heading text-xl font-bold mb-2">100% Eco-Friendly</h3>
+        <p>Solar powered, zero plastic, and built in harmony with the surrounding forest ecosystem.</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-forest-50 dark:bg-forest-700/30 hover:shadow-xl transition">
+        <div class="text-4xl mb-4">🍃</div>
+        <h3 class="font-heading text-xl font-bold mb-2">Farm-to-Table Dining</h3>
+        <p>Fresh, organic meals sourced daily from our own gardens and local farmers.</p>
+      </div>
+      <div class="p-8 rounded-2xl bg-forest-50 dark:bg-forest-700/30 hover:shadow-xl transition">
+        <div class="text-4xl mb-4">🧘</div>
+        <h3 class="font-heading text-xl font-bold mb-2">Wellness & Nature Trails</h3>
+        <p>Guided forest walks, yoga sessions, and meditation spots nestled in nature.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- STATS -->
+<section class="py-16 px-6 md:px-12 bg-forest-700 text-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div>
+      <h3 class="font-heading text-4xl font-bold mb-2">15+</h3>
+      <p class="text-sm">Years of Experience</p>
+    </div>
+    <div>
+      <h3 class="font-heading text-4xl font-bold mb-2">10,000+</h3>
+      <p class="text-sm">Happy Guests</p>
+    </div>
+    <div>
+      <h3 class="font-heading text-4xl font-bold mb-2">6</h3>
+      <p class="text-sm">Room Categories</p>
+    </div>
+    <div>
+      <h3 class="font-heading text-4xl font-bold mb-2">4.9★</h3>
+      <p class="text-sm">Average Rating</p>
+    </div>
+  </div>
+</section>
+
+  <!-- FEATURED ROOMS PREVIEW -->
+  <section class="py-20 px-6 md:px-12 bg-sand/40 dark:bg-forest-700/20">
+    <div class="max-w-6xl mx-auto" data-aos="fade-up">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-12">Stay Among the Trees</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-forest-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+          <img src="/assets/images/rooms/treehouse-cabana.jpg" alt="Treehouse Cabana" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold mb-2">Treehouse Cabanas</h3>
+            <p class="mb-4">Elevated private cabins with panoramic forest views.</p>
+            <a href="rooms.html" class="text-forest-500 font-semibold hover:underline">View Details &rarr;</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-forest-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+          <img src="/assets/images/rooms/canopy-deluxe.jpg" alt="Canopy Deluxe Room" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold mb-2">Canopy Deluxe Rooms</h3>
+            <p class="mb-4">Spacious rooms with floor-to-ceiling forest-facing windows.</p>
+            <a href="rooms.html" class="text-forest-500 font-semibold hover:underline">View Details &rarr;</a>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-forest-900 rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 transition">
+          <img src="/assets/images/rooms/garden-room.jpg" alt="Garden Room" class="w-full h-56 object-cover" loading="lazy">
+          <div class="p-6">
+            <h3 class="font-heading text-xl font-bold mb-2">Garden Rooms</h3>
+            <p class="mb-4">Cozy ground-level rooms opening directly into lush gardens.</p>
+            <a href="rooms.html" class="text-forest-500 font-semibold hover:underline">View Details &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 px-6 md:px-12 bg-cream dark:bg-forest-900">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-12">What Our Guests Say</h2>
+      <div id="testimonial-box" class="bg-forest-50 dark:bg-forest-700/30 rounded-2xl p-8 transition-opacity duration-500">
+        <p id="testimonial-text" class="text-lg italic mb-4">"Waking up to birdsong and morning mist over the canopy was magical. Best eco-getaway we've had."</p>
+        <p id="testimonial-author" class="font-semibold">— Ananya R.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACTIVITIES -->
+<section class="py-20 px-6 md:px-12 bg-forest-50 dark:bg-forest-700/20">
+  <div class="max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-12">Experiences Await</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-6 bg-white dark:bg-forest-900 rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-4xl mb-3">🥾</div>
+        <h3 class="font-semibold">Nature Trails</h3>
+      </div>
+      <div class="p-6 bg-white dark:bg-forest-900 rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-4xl mb-3">🧘</div>
+        <h3 class="font-semibold">Yoga & Meditation</h3>
+      </div>
+      <div class="p-6 bg-white dark:bg-forest-900 rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-4xl mb-3">🔥</div>
+        <h3 class="font-semibold">Campfire Nights</h3>
+      </div>
+      <div class="p-6 bg-white dark:bg-forest-900 rounded-2xl shadow hover:shadow-xl transition">
+        <div class="text-4xl mb-3">🚲</div>
+        <h3 class="font-semibold">Cycling Trails</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- NEWSLETTER -->
+  <section class="py-16 px-6 md:px-12 bg-forest-700 text-white">
+    <div class="max-w-2xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="font-heading text-2xl md:text-3xl font-bold mb-4">Stay in the Loop</h2>
+      <p class="mb-6">Subscribe for exclusive offers and forest stories.</p>
+      <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 justify-center">
+        <input type="email" id="newsletter-email" required placeholder="Enter your email" class="px-5 py-3 rounded-full text-forest-900 w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-forest-500">
+        <button type="submit" class="bg-forest-500 hover:bg-forest-100 hover:text-forest-700 px-6 py-3 rounded-full font-semibold transition">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" class="mt-3 text-sm"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-forest-900 text-cream py-12 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-heading text-xl font-bold mb-3">Verdant Grove</h3>
+        <p class="text-sm">A sustainable forest retreat dedicated to nature, comfort, and conscious living.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="about.html" class="hover:text-forest-500">About Us</a></li>
+          <li><a href="rooms.html" class="hover:text-forest-500">Rooms</a></li>
+          <li><a href="services.html" class="hover:text-forest-500">Services</a></li>
+          <li><a href="gallery.html" class="hover:text-forest-500">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>Sahyadri Hills, Maharashtra, India</li>
+          <li>+91 98765 43210</li>
+          <li>hello@verdantgrove.com</li>
+        </ul>
+      </div>
+      <div>
+  <h4 class="font-semibold mb-3">Follow Us</h4>
+  <div class="flex gap-4 mt-2">
+    <a href="#" class="w-9 h-9 bg-forest-700 hover:bg-forest-500 rounded-full flex items-center justify-center transition">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+    <a href="#" class="w-9 h-9 bg-forest-700 hover:bg-forest-500 rounded-full flex items-center justify-center transition">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+  </div>
+</div>
+    </div>
+    <p class="text-center text-sm mt-8 border-t border-forest-700 pt-6">&copy; 2026 Verdant Grove Resort. All rights reserved.</p>
+  </footer>
+   
+  <!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Back to top" class="hidden fixed bottom-6 left-6 z-50 bg-forest-700 hover:bg-forest-500 text-white w-11 h-11 rounded-full shadow-lg transition flex items-center justify-center">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+
+  <!-- Floating Book Now -->
+ <!-- FLOATING BUTTONS -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 items-end">
+  <a href="https://wa.me/919876543210?text=Hello!%20I%20would%20like%20to%20enquire%20about%20a%20stay%20at%20Verdant%20Grove%20Resort." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full shadow-lg transition flex items-center justify-center">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <a href="booking.html" class="bg-forest-500 hover:bg-forest-700 text-white px-5 py-3 rounded-full shadow-lg font-semibold transition flex items-center gap-2">🌿 Book Now</a>
+</div>
+   
+  <!-- COOKIE CONSENT -->
+<div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-[150] bg-forest-900 text-cream px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xl">
+  <p class="text-sm">🍪 We use cookies to enhance your experience. By continuing to browse, you agree to our <a href="#" class="underline text-forest-500">Cookie Policy</a>.</p>
+  <div class="flex gap-3 shrink-0">
+    <button id="cookie-accept" class="bg-forest-500 hover:bg-forest-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">Accept</button>
+    <button id="cookie-decline" class="border border-cream hover:bg-cream hover:text-forest-900 text-cream px-5 py-2 rounded-full text-sm font-semibold transition">Decline</button>
+  </div>
+</div>
+  
+
+  <script type="module" src="/src/js/app.js"></script>
+<script type="module" src="/src/js/main.js"></script>
+
+</body>
+</html>
