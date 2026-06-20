@@ -12,6 +12,7 @@ export default defineConfig({
         gallery:  resolve(__dirname, 'gallery.html'),
         services: resolve(__dirname, 'services.html'),
         booking:  resolve(__dirname, 'booking.html'),
+        roomDetail:  resolve(__dirname, 'room-detail.html'),
       }
     }
   }
