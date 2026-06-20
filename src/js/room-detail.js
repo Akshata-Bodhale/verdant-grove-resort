@@ -1,9 +1,17 @@
+// ===== Image Imports (Vite needs these to track & hash correctly) =====
+import imgCabana from '/assets/images/rooms/treehouse-cabana.jpg'
+import imgDeluxe from '/assets/images/rooms/canopy-deluxe.jpg'
+import imgGarden from '/assets/images/rooms/garden-room.jpg'
+import imgSuite from '/assets/images/rooms/forest-suite.jpg'
+import imgTwin from '/assets/images/rooms/twin-room.jpg'
+import imgSingle from '/assets/images/rooms/single-cabana.jpg'
+
 // ===== Room Detail Data =====
 const roomData = {
   cabana: {
     name: "Treehouse Cabana",
     price: 12000,
-    image: "/assets/images/rooms/treehouse-cabana.jpg",
+    image: imgCabana,          // ✅ use imported variable
     guests: 2,
     size: "450 sq.ft",
     description: "Perched among the treetops, our Treehouse Cabanas offer an immersive forest experience with floor-to-ceiling windows, a private wooden deck, and the soothing sounds of the canopy. Wake up to birdsong and sleep under the stars.",
@@ -12,7 +20,7 @@ const roomData = {
   deluxe: {
     name: "Canopy Deluxe Room",
     price: 9500,
-    image: "/assets/images/rooms/canopy-deluxe.jpg",
+    image: imgDeluxe,          // ✅
     guests: 3,
     size: "400 sq.ft",
     description: "Spacious and bright, the Canopy Deluxe Room features floor-to-ceiling forest-facing windows, a comfortable seating area, and premium furnishings — ideal for travelers seeking comfort with a view.",
@@ -21,7 +29,7 @@ const roomData = {
   garden: {
     name: "Garden Room",
     price: 6000,
-    image: "/assets/images/rooms/garden-room.jpg",
+    image: imgGarden,          // ✅
     guests: 2,
     size: "320 sq.ft",
     description: "Cozy and welcoming, our Garden Rooms open directly onto lush landscaped gardens. Perfect for guests who enjoy easy outdoor access and a peaceful ground-level stay.",
@@ -30,7 +38,7 @@ const roomData = {
   suite: {
     name: "Forest View Suite",
     price: 14000,
-    image: "/assets/images/rooms/forest-suite.jpg",
+    image: imgSuite,           // ✅
     guests: 4,
     size: "650 sq.ft",
     description: "Our most premium offering — a spacious suite with a private balcony overlooking the forest valley, separate living area, in-room jacuzzi, and dedicated butler service for a truly indulgent stay.",
@@ -39,7 +47,7 @@ const roomData = {
   twin: {
     name: "Twin Room",
     price: 7500,
-    image: "/assets/images/rooms/twin-room.jpg",
+    image: imgTwin,            // ✅
     guests: 2,
     size: "350 sq.ft",
     description: "A comfortable twin-bed setup ideal for friends, families, or colleagues traveling together, with all essential amenities and a calming forest-adjacent ambiance.",
@@ -48,13 +56,15 @@ const roomData = {
   "cabana-single": {
     name: "Single Cabana",
     price: 13500,
-    image: "/assets/images/rooms/single-cabana.jpg",
+    image: imgSingle,          // ✅
     guests: 1,
     size: "380 sq.ft",
     description: "A secluded retreat for solo travelers — this private cabana offers complete solitude amidst nature, with a personal deck overlooking the forest canopy.",
     amenities: ["Free Wi-Fi", "Private Deck", "Forest View", "Rainfall Shower", "Organic Toiletries", "Reading Nook"]
   }
 };
+
+// ===== rest of your existing code stays exactly the same =====
 
 // ===== Get room from URL query param =====
 const params = new URLSearchParams(window.location.search);
